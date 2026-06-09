@@ -38,12 +38,11 @@
 
   /* background stuff */
   .custom-bg {
-    /*background-image: url("https://i.postimg.cc/nLmfTVgs/2F23A585-5376-47B9-A91A-4372A6F373DA.png") !important; */
     background: rgba(0, 0, 0, 0.15);
   }
 
   .lobby {
-    background-image: url("https://i.postimg.cc/SKn4t0XR/raichu.png") !important;
+    background-image: url("https://raw.githubusercontent.com/n2pe/pac-themes/refs/heads/main/backgrounds/raichu.png") !important;
     background-size: cover !important;
   }
 
@@ -53,7 +52,7 @@
 
   main,
   div[class*="lobby_"] {
-    background: url("https://i.postimg.cc/SKn4t0XR/raichu.png") !important;
+    background: url("https://raw.githubusercontent.com/n2pe/pac-themes/refs/heads/main/backgrounds/raichu.png") !important;
     background-size: cover !important;
   }
 
