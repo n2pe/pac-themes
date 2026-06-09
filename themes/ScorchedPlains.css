@@ -1,0 +1,30 @@
+@-moz-document url-prefix("https://pokemon-auto-chess.com") {
+  :root {
+    --color-bg-primary: #970606;
+    --color-bg-secondary: #710303;
+    --color-bg-tertiary: #6a1320;
+    --color-bg-accent: #ff9024;
+
+    --color-fg-primary: #e0e0e0;
+    --color-fg-secondary: #e0e0e0;
+
+    --shadow-clickable: none;
+  }
+
+  .custom-bg {
+    background: rgba(50, 0, 0, 0.4);
+  }
+
+  .lobby {
+    background-image: url("https://i.postimg.cc/3wDScfWZ/Scorched-Plains-RTDX.png") !important;
+    background-size: cover !important;
+  }
+
+  .scales-ap .ability-value {
+    color: #861eff;
+  }
+
+  #boosters-page .actions .booster-count {
+    color: var(--color-fg-primary);
+  }
+}
