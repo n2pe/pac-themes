@@ -1,0 +1,301 @@
+@-moz-document url-prefix("https://pokemon-auto-chess.com") {
+    /* main */
+
+    :root {
+        /* colours */
+        --color-bg-primary: #1e1e2e;
+        --color-bg-secondary: #313244;
+        --color-bg-tertiary: #45475a;
+        --color-bg-quaternary: #181825;
+        --color-accent: #b4befe;
+
+        /* borders */
+        --border-thick: 2px solid hsla(235, 15%, 53%, 0.2) !important;
+        --border-thin: 1px solid hsla(235, 15%, 53%, 0.2) !important;
+        --border-extra-thick: 1px solid hsla(235, 15%, 53%, 0.2) !important;
+        /*--border-style: 1px solid hsla(235, 15%, 53%, 0.2) !important;
+    
+    /* damage colour indicators */
+        --color-physcial: #f38ba8 !important;
+        --color-special: #74c7ec !important;
+        --color-true: #fab387 !important;
+
+        /* cursors */
+        --cursor-primary: auto !important;
+        --cursor-hover: pointer !important;
+        --cursor-grab: auto !important;
+        --cursor-grabbing: auto !important;
+    }
+
+
+    /* ----- TEXT ----- */
+
+    /* text colour */
+    * {
+        color: #cdd6f4 !important;
+    }
+
+    /* player title colour */
+    .player-title {
+        color: #f9e2af !important;
+    }
+
+
+    /* ----- TOOLTIP BORDERS ----- */
+
+    .custom-theme-tooltip {
+        border-color: hsla(235, 15%, 53%, 0.2) !important;
+        border-style: solid !important;
+    }
+
+
+    /* ----- BACKGROUNDS ----- */
+
+    /* custom artwork foreground */
+    .custom-bg {
+        background-image: url("https://raw.githubusercontent.com/n2pe/pac-themes/refs/heads/main/backgrounds/catppuccin-forest.png") !important;
+    }
+
+
+    /* ----- SIDEBAR ----- */
+
+    /* sidebar accent (highlights) */
+    .sidebar [class*="item"]:hover,
+    .sidebar a:hover,
+    [class*="Sidebar"] [class*="item"]:hover {
+        background-color: var(--color-accent) !important;
+        cursor: pointer;
+    }
+
+    /* sidebar rounding */
+    .ps-sidebar-root.ps-collapsed.sidebar {
+        border-radius: 0px !important;
+    }
+
+    .ps-sidebar-container {
+        border-radius: 0px !important;
+    }
+
+    #root .ps-sidebar-root {
+        border-radius: 0px !important;
+    }
+
+
+    /* ----- BUTTONS ----- */
+
+    /* green buttons */
+    .bubbly.green {
+        background-color: #a6e3a1 !important;
+        box-shadow: none;
+    }
+
+    /* yellow buttons */
+    .bubbly.orange {
+        background-color: #f9e2af !important;
+        box-shadow: none;
+    }
+
+    /* green buttons */
+    .bubbly.red {
+        background-color: #f38ba8 !important;
+        box-shadow: none;
+    }
+
+    /* blue buttons */
+    .bubbly.blue {
+        background-color: #89b4fa !important;
+        box-shadow: none;
+    }
+
+    /* dark buttons */
+    .bubbly.dark {
+        background-color: #585b70 !important;
+        box-shadow: none;
+    }
+}
+
+@-moz-document url("https://pokemon-auto-chess.com/lobby") {
+    /* lobby */
+
+    /* ----- BACKGROUNDS ----- */
+
+    /* remove checkerboard background */
+    .lobby {
+        background-color: var(--color-bg-quaternary) !important;
+    }
+
+    /* removes player shadows */
+    .player {
+        box-shadow: none !important;
+    }
+}
+
+@-moz-document url("https://pokemon-auto-chess.com/preparation") {
+    /* preparation */
+
+    /* ----- BACKGROUNDS ----- */
+
+    /* remove checkerboard background */
+    main,
+    div[class*="lobby_"] {
+        background: var(--color-bg-quaternary) !important;
+    }
+
+
+    /* ----- CHAT BOX COLOUR ----- */
+
+    form input,
+    form textarea,
+    .chat-input,
+    input[type="text"] {
+        background-color: var(--color-bg-tertiary) !important;
+    }
+
+
+    /* ----- PLAYER STATUS  ----- */
+
+    /* not ready */
+    .preparation-menu-user.not-ready {
+        border-color: #f38ba8;
+    }
+
+    /* ready */
+    .preparation-menu-user.ready {
+        border-color: #a6e3a1;
+    }
+}
+
+@-moz-document url("https://pokemon-auto-chess.com/game") {
+    /* game and loading */
+
+    :root {
+        /* different border colours */
+        --border-thick: 2px solid hsla(250, 15%, 53%, 0.4) !important;
+        --border-thin: 1px solid hsla(235, 15%, 53%, 0.3) !important;
+    }
+
+    /* ----- LOADING ----- */
+
+    /* loading tips */
+    .speech-bubble {
+        display: none;
+    }
+
+    /* loading bar */
+    .my-progress::-moz-progress-bar,
+    .loading-bar::-moz-progress-bar {
+        background-color: var(--color-accent) !important;
+        background-image: none !important;
+    }
+
+
+    /* ----- GAME ----- */
+
+    /* current active synergy level accent */
+    [style*="color: rgb(247, 213, 29)"] {
+        color: #f9e2af !important;
+    }
+
+    /* ----- SHOP ----- */
+
+    /* shop cost text colour */
+    .game-pokemon-portrait-cost,
+    .game-pokemon-portrait-cost * {
+        color: #cdd6f4 !important;
+        text-shadow:
+            -1px -1px 0 #1e1e2e,
+            1px -1px 0 #1e1e2e,
+            -1px 1px 0 #1e1e2e,
+            1px 1px 0 #1e1e2e !important;
+    }
+
+    /* revamp shop layout */
+    #game-shop-info {
+        padding: 0.2em !important;
+    }
+
+    .game-shop .information {
+        padding: 1px 2px 1px 8px !important;
+        border-radius: 12px !important;
+    }
+
+    .game-shop .information>div {
+        background: none !important;
+    }
+
+    /* make info bar floating */
+    #game-shop-info {
+        bottom: 104% !important;
+    }
+
+    /* remove background images */
+    #game-life-info {
+        background-image: none !important;
+    }
+
+    #game-money-info {
+        background-image: none !important;
+    }
+
+    #game-team-info {
+        background-image: none !important;
+    }
+
+
+    /* ----- GAME INFO ----- */
+
+    /* timer accent */
+    .timer-bar-inner {
+        background: var(--color-accent) !important;
+        box-shadow: none;
+        border-radius: 12px;
+        height: 12px;
+        top: -2px;
+        left: -2px;
+        right: -1px;
+    }
+
+    /* timer bar floating */
+    .timer-bar {
+        background: var(--color-bg-primary) !important;
+        border: var(--border-thick);
+        top: 115%;
+        border-radius: 8px;
+        left: -1px;
+        right: -1px;
+    }
+
+    /* round game info floating  */
+    #game-stage-info {
+        border-radius: 12px;
+    }
+
+
+    /* ----- PLAYER INFO  ----- */
+
+    /* player health */
+    .CircularProgressbar-path {
+        stroke: #b4befe !important;
+    }
+
+    .CircularProgressbar-trail {
+        stroke: #1e1e2e !important;
+    }
+
+    .CircularProgressbar {
+        border: #313244 !important;
+        border-radius: 50% !important;
+        padding: 4px;
+    }
+}
+
+@-moz-document url("https://pokemon-auto-chess.com/after") {
+    /* after */
+
+    /* ----- BACKGROUNDS ----- */
+
+    /* remove checkerboard background */
+    #root {
+        background: var(--color-bg-quaternary) !important;
+    }
+}
